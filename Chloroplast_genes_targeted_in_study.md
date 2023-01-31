@@ -1,5 +1,6 @@
-# Gene| 	# Name
-psbA|	photosystem II protein D1
+Gene| Name
+---- | ----
+|psbA|	photosystem II protein D1|
 matK|	maturase K
 psbK|	photosystem II protein K
 atpF|	ATP synthase CF0 subunit I
