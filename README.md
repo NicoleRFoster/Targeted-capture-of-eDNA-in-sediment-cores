@@ -15,12 +15,25 @@ Briefly, reads are run through the 'Paleomix' pipeline https://paleomix.readthed
 A custom reference database was created using NCBI and sequences from Foster et al. 2021  https://doi.org/10.1002/ece3.8816 these sequences were separated by the different gene regions so that mapping was region specific. See "Reference_library_targetgenes.fasta" file
 Resulting bam files are then processed using bcftools and consensus sequences are created for the mapped reads.
 This resulted in multiple consensus sequences across multiple genes and species. However, given not all gene regions discriminate at the species level, an additional clustering step was conducted to ensure sample reads were mapped to the correct taxa and taxonomic ranking.
-Clustering was performed at 95% similarity using cd-hit-est and both the consensus sample sequences and the reference database. The custom R code "Soil_core_processing_code_run_with_R.R" was then run to take the output of cd-hit-est, assign upstream taxonomy to sequences, then determine whether samples consensus sequences clustered at the species, genus, family or order level. 
+Clustering was performed at 95% similarity using cd-hit-est and both the consensus sample sequences and the reference database. The custom R code "Soil_core_processing_code_run_with_R.R" was then run to take the output of cd-hit-est, assign upstream taxonomy to sequences, then determine whether samples consensus sequences clustered at the species, genus, family or order level and assign a taxonomic ranking.
 
 ![Picture 1](https://user-images.githubusercontent.com/122473452/215876420-1a55ba45-203a-4b8d-9679-cf81c5615389.png)
 
-If the sample consensus sequence clustered broadly with other sequences, it meant either, the gene in question did not have enough discriminatory power/could not discern between species on its own, or the sample consensus sequence did not contain enough genetic data to generate informative sequences i.e. read depth did not meet the assigned threshold to call a base (depth <50 bp) and instead missing data values were inserted (N’s).
+If the sample consensus sequence clustered broadly with other sequences, it meant either, the gene in question did not have high enough interspecific variation or the sample consensus sequence did not contain enough genetic data to generate informative sequences i.e. read depth did not meet the assigned threshold to call a base (depth <50 bp) and instead missing data values were inserted (N’s).
 This approach helps to prevent false positives and is conservative in calling species presence.
 The 20 Chloropast gene regions used in this study increased the chances of recovering DNA for all species present and improved species assignment because chloroplast genes have different levels of discrimination for different plant species. 
+
+## Scripts
+
+# Soil_core_processing_code_commandline.R 
+For command line processing; Paleomix, bcftools consensus call and cd-hit-est clustering
+
+# Soil_core_processing_code_run_with_R.R
+For R processing; converting .clstr files from above script to dataframe for manipulation; determining upstream taxonomy; assigning taxonomic ranking; converting data to a phyloseq object for plotting
+
+# .yaml
+Example of .yaml input and conditions used with Paleomix
+
+
 
 
