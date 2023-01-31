@@ -34,8 +34,10 @@ For R processing; converting .clstr files from above script to dataframe for man
 ### .yaml
 Example of .yaml input and conditions used with Paleomix
 
+## Other files
+
 ### Reference_library_targetgenes.fasta
 Reference database used to map sample reads too. This files is contains sequences for the 20 chloroplast gene regions targeted in this study from NCBI and generated in house Foster et al. 2021  https://doi.org/10.1002/ece3.8816
 
-
+### Chloroplast_
 
