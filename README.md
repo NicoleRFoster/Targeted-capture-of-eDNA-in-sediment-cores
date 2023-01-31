@@ -25,13 +25,13 @@ The 20 Chloropast gene regions used in this study increased the chances of recov
 
 ## Scripts
 
-# Soil_core_processing_code_commandline.R 
+### Soil_core_processing_code_commandline.R 
 For command line processing; Paleomix, bcftools consensus call and cd-hit-est clustering
 
-# Soil_core_processing_code_run_with_R.R
+### Soil_core_processing_code_run_with_R.R
 For R processing; converting .clstr files from above script to dataframe for manipulation; determining upstream taxonomy; assigning taxonomic ranking; converting data to a phyloseq object for plotting
 
-# .yaml
+### .yaml
 Example of .yaml input and conditions used with Paleomix
 
 
