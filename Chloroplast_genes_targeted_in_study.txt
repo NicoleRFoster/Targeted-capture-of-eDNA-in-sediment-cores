@@ -1,4 +1,4 @@
-Gene| 	Name
+# Gene| 	# Name
 psbA|	photosystem II protein D1
 matK|	maturase K
 psbK|	photosystem II protein K
