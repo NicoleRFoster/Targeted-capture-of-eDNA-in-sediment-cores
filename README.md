@@ -2,11 +2,11 @@
 The following study used environmental DNA buried in sediment cores to reconstruct historical changes in coastal plant communities. 
 
 ## Project overview
-Sediment cores (~1m long and 7.5cm wide) were collected from a wetland site in South Australia which today is dominated by mangroves. The sediment cores were subsectioned and samples were sent for either dating, stale isotope analysis or eDNA. The majority of the code and descriptions here refer to the eDNA analysis method and bioinformatic processing. 
+Sediment cores (~1m long and 7.5cm wide) were collected from a wetland site in South Australia which today is dominated by mangroves. The sediment cores were sub-sectioned and samples were sent for either dating, stable isotope analysis or eDNA analysis. The code and descriptions here refer to the eDNA analysis method and bioinformatic processing. 
 
 ## Targeted Capture of eDNA
 Targeted capture of eDNA was conducted on sediment core samples using RNA baits/probes designed to capture plant communities in the Alismatales order (see bait design - https://doi.org/10.1101/2021.09.06.456727). A description of this process and comparisons to tradtitional metabarcoding can be found in Foster et al. 2020 https://doi.org/10.1071/MF19175. 
-DNA was extracted using the DNeasy Powerlyzer Soil Kit (QIAGEN), library prep was conducted using NEBNext Ultra II Library preparation kit (New England Biolabs®) and targeted capture was performed using myBaits® Targeted NGS Manual Version 4.01. Full methods can be found in the manuscript https://doi.org/10.3389/fevo.2021.735744
+Briefly, DNA was extracted using the DNeasy Powerlyzer Soil Kit (QIAGEN), library prep was conducted using NEBNext Ultra II Library preparation kit (New England Biolabs®) and targeted capture was performed using myBaits® Targeted NGS Manual Version 4.01. Full methods can be found in the manuscript https://doi.org/10.3389/fevo.2021.735744
 
 ## Bioinformatic processing
 Raw sequences reads were received from the Illumina HiSeq X Ten and demultiplexed using Illumina Bcl2fastq v2.18.0. See Soil_core_processing_code_commandline.R file for next steps, then Soil_core_processing_code_run_with_R.R
