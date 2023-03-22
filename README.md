@@ -40,5 +40,5 @@ Example of .yaml input and conditions used with Paleomix
 Reference database used to map sample reads too. This files is contains sequences for the 20 chloroplast gene regions targeted in this study from NCBI and generated in house Foster et al. 2021  https://doi.org/10.1002/ece3.8816
 
 ### Chloroplast_genes_targeted_in_study
-table fo chloroplast genes and full names that were targeted in this study usng the specially designed bait set
+Table of chloroplast genes and full names that were targeted in this study usng the specially designed bait set
 
