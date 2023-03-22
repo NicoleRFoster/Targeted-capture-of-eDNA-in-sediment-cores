@@ -36,8 +36,11 @@ Example of .yaml input and conditions used with Paleomix
 
 ## Other files
 
-### Reference_library_targetgenes.fasta
-Reference database used to map sample reads too. This files is contains sequences for the 20 chloroplast gene regions targeted in this study from NCBI and generated in house Foster et al. 2021  https://doi.org/10.1002/ece3.8816
+### References_library_target_genes_all.fasta
+Reference database used to map sample reads too. This files is contains sequences across temperate coastal plants for the 20 chloroplast gene regions targeted in this study and is a combination of sequences from from NCBI and those generated in house. (See Foster et al. 2021  https://doi.org/10.1002/ece3.8816 for details)
+
+### References_generated_using_baits.fasta
+Reference database containinng only those sequences generated in house using the  same bait set in this study for 92 coastal temperate plants. See  Foster et al. 2021  https://doi.org/10.1002/ece3.8816
 
 ### Chloroplast_genes_targeted_in_study
 Table of chloroplast genes and full names that were targeted in this study usng the specially designed bait set
